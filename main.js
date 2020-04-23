@@ -5,4 +5,8 @@ const output = document.getElementById("output")
 
 submit.addEventListener("click", function () {
     output.innerHTML = `I can purchase ${thing.value} at ${location1.value}`
+    thing.value = "";
+    location1.value = "";
+    thing.focus();
+    thing.select();
 })
